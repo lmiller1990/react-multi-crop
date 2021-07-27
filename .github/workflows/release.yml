@@ -16,8 +16,8 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
-        # uses: actions/checkout@v2
-        uses: mxschmitt/action-tmate@v3
+        uses: actions/checkout@v2
+        # uses: mxschmitt/action-tmate@v3
         with:
           fetch-depth: 0
       - name: Setup Node.js
@@ -46,6 +46,9 @@ jobs:
           CHOKIDAR_USEPOLLING: 1
           BROWSER: "none"
           PUBLIC_URL: "/"
+      - name: SSH
+        # uses: actions/checkout@v2
+        uses: mxschmitt/action-tmate@v3
       - name: Upload to Codecov
         run: |
            bash <(curl -s https://codecov.io/bash)
