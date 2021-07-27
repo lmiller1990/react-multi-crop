@@ -45,7 +45,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cy:open": "cypress open",
-    "cy:run": "DEBUG=cypress:server:* cypress run",
+    "cy:run": "DEBUG=cypress:* cypress run",
     "dev": "start-test start 3000 cy:open",
     "dev:ci": "start-test start 3000 cy:run"
   },
