@@ -8,7 +8,7 @@
     "docs:build": "vuepress build documentation -d docs",
     "postinstall": "husky install"
   },
-  "private": true,
+  "private": false,
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-lerna-scopes": "^12.1.4",
