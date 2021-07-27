@@ -42,6 +42,8 @@ jobs:
           yarn lerna run dev:ci --scope=@berviantoleo/react-component-multi-crop-demo
         env:
           SKIP_PREFLIGHT_CHECK: true
+          CHOKIDAR_USEPOLLING: 1
+          CHOKIDAR_USEPOLLING: true
           BROWSER: "none"
           PUBLIC_URL: "/"
       - name: Upload to Codecov
