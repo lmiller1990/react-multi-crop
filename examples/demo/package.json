@@ -47,7 +47,7 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "dev": "start-test start 3000 cy:open",
-    "dev:ci": "start-test start 3000 cy:run"
+    "dev:ci": "'DEBUG=cypress:server:*' start-test start 3000 cy:run"
   },
   "eslintConfig": {
     "extends": "react-app"
